@@ -37,3 +37,33 @@ MESSAGES = {
            "no_remedy": "இந்த நோய்க்கான தீர்வு இன்னும் சேர்க்கப்படவில்லை. உங்கள் வேளாண் அலுவலரை அணுகவும்."},
 }
 
+
+def predict(image, lang="en"):
+    """image: a PIL image. Returns a dict with the result and text to show or speak."""
+    msgs = MESSAGES.get(lang, MESSAGES["en"])
+    img = image.convert("RGB").resize(IMG_SIZE)
+    x = np.expand_dims(np.array(img, dtype=np.float32), axis=0)  # raw 0-255, model rescales
+    _interpreter.set_tensor(_in["index"], x)
+    _interpreter.invoke()
+    probs = _interpreter.get_tensor(_out["index"])[0]
+
+    top3 = [(LABELS[i], float(probs[i])) for i in np.argsort(probs)[::-1][:3]]
+    idx = int(np.argmax(probs))
+    confidence = float(probs[idx])
+    label = LABELS[idx]
+
+    if confidence < CONFIDENCE_THRESHOLD:
+        return {"label": None, "confidence": confidence, "text": msgs["unsure"], "top3": top3}
+
+    crop, _, disease = label.partition("___")
+    disease = disease.replace("_", " ")
+    entry = REMEDIES.get(label, {}).get(lang) or REMEDIES.get(label, {}).get("en")
+
+    if "healthy" in label.lower():
+        text = f"{crop.replace('_', ' ')}: {msgs['healthy']}"
+    elif entry:
+        text = f"{entry['name']}. {entry['remedy']} {entry['prevention']}"
+    else:
+        text = f"{crop.replace('_', ' ')}: {disease}. {msgs['no_remedy']}"
+    return {"label": label, "confidence": confidence, "text": text, "top3": top3}
+    
