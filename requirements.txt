@@ -1,6 +1,5 @@
-tensorflow>=2.15
+streamlit
+ai-edge-litert
 numpy
 pillow
-scikit-learn
-streamlit
 gTTS
