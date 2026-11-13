@@ -37,3 +37,9 @@ if photo:
         from gtts import gTTS
         buf = io.BytesIO()
         gTTS(result["text"], lang=voice).write_to_fp(buf)
+        st.audio(buf.getvalue(), format="audio/mp3")
+    except Exception:
+        st.caption("Voice output needs an internet connection.")
+
+st.caption("Demo only. Trained on PlantVillage lab photos, so results on real field photos can differ. "
+           "Confirm with your local agricultural officer before treating a crop.")
