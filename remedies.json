@@ -1,0 +1,33 @@
+{
+  "Tomato___Early_blight": {
+    "en": {
+      "name": "Tomato early blight",
+      "remedy": "Remove and destroy the affected lower leaves. Spray a copper-based fungicide or the fungicide recommended by your local agricultural officer.",
+      "prevention": "Rotate crops, avoid wetting the leaves when watering, and keep space between plants."
+    },
+    "ta": {
+      "name": "தக்காளி ஆரம்பகால இலைக்கருகல் நோய்",
+      "remedy": "பாதிக்கப்பட்ட கீழ் இலைகளை அகற்றி அழிக்கவும். காப்பர் அடிப்படையிலான பூஞ்சைக் கொல்லியை அல்லது உங்கள் வேளாண் அலுவலர் பரிந்துரைக்கும் மருந்தை தெளிக்கவும்.",
+      "prevention": "பயிர் சுழற்சி செய்யவும், நீர் பாய்ச்சும்போது இலைகளை நனைக்க வேண்டாம், செடிகளுக்கு இடையே இடைவெளி விடவும்."
+    }
+  },
+  "Potato___Late_blight": {
+    "en": {
+      "name": "Potato late blight",
+      "remedy": "Remove infected plants quickly because this disease spreads fast in cool, wet weather. Use the fungicide recommended by your local agricultural officer.",
+      "prevention": "Use disease-free seed tubers, avoid overhead watering, and improve drainage."
+    },
+    "ta": {
+      "name": "உருளைக்கிழங்கு தாமத இலைக்கருகல் நோய்",
+      "remedy": "குளிர்ந்த ஈரமான வானிலையில் இந்த நோய் வேகமாக பரவும், எனவே பாதிக்கப்பட்ட செடிகளை உடனே அகற்றவும். உங்கள் வேளாண் அலுவலர் பரிந்துரைக்கும் பூஞ்சைக் கொல்லியை பயன்படுத்தவும்.",
+      "prevention": "நோயற்ற விதைக் கிழங்குகளை பயன்படுத்தவும், மேலிருந்து நீர் பாய்ச்சுவதை தவிர்க்கவும், வடிகால் வசதியை மேம்படுத்தவும்."
+    }
+  },
+  "Apple___Apple_scab": {
+    "en": {
+      "name": "Apple scab",
+      "remedy": "Remove fallen infected leaves and fruit. Use the fungicide recommended by your local agricultural officer.",
+      "prevention": "Prune trees so air can flow through, and clear fallen leaves every season."
+    }
+  }
+}
