@@ -100,7 +100,7 @@ streamlit run app.py
 ## Team Techxorcist
 
 - Karthick K (Team Leader)
-- Keerthana J
+- Keerthana
 - VarumLakshmi M
 - Mytheeswari G
 - Srikanth S
