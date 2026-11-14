@@ -12,9 +12,9 @@ Built for Smart India Hackathon 2026 (problem statement SIH26131: early detectio
 
 <table>
 <tr>
-<td><img src="screenshots/1-home.png" alt="PlantCare home screen with language choice and photo upload" width="260"></td>
-<td><img src="screenshots/2-confident-result.png" alt="Clear leaf photo: 100% confidence, healthy blueberry leaf, result in English with voice" width="260"></td>
-<td><img src="screenshots/3-unsure-tamil.png" alt="Field photo: 35% confidence, the app asks for a clearer photo in Tamil" width="260"></td>
+<td><img src="1-home.png" alt="PlantCare home screen with language choice and photo upload" width="260"></td>
+<td><img src="2-confident-result.png" alt="Clear leaf photo: 100% confidence, healthy blueberry leaf, result in English with voice" width="260"></td>
+<td><img src="3-unsure-tamil.png" alt="Field photo: 35% confidence, the app asks for a clearer photo in Tamil" width="260"></td>
 </tr>
 <tr>
 <td align="center">Choose English or Tamil and upload a leaf photo</td>
