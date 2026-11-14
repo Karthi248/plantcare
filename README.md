@@ -4,7 +4,7 @@ A farmer photographs a leaf, and the app names the disease and gives a remedy in
 
 Built for Smart India Hackathon 2026 (problem statement SIH26131: early detection and management of crop diseases and pest infestations) by Team Techxorcist.
 
-**▶ Live demo:** https://YOUR-APP-NAME.streamlit.app *(upload a leaf photo and try it)*
+**▶ Live demo:** https://plantcare-78fojlbcmn6wa55an5pipa.streamlit.app *(upload a leaf photo and try it)*
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Karthi248/plantcare/blob/main/PlantCare_Training.ipynb)
 
@@ -99,4 +99,9 @@ streamlit run app.py
 
 ## Team Techxorcist
 
-Karthick K (Team Leader), Keerthana J, VarumLakshmi M, Mytheeswari G, Srikanth S, Vasanth P
+- Karthick K (Team Leader)
+- Keerthana J
+- VarumLakshmi M
+- Mytheeswari G
+- Srikanth S
+- Vasanth P
